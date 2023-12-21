@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      .navbar{
+        background-color: lightgray;
+      }
+      body{
+        background-image: url("images/bgimage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      form {
+        width: 300px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      /* Resetting default margin and padding for the list items */
+      ul,
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      /* Styling the navigation bar */
+      nav {
+        background-color: #333; /* Change this to your desired background color */
+      }
+
+      nav a {
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white; /* Change this to your desired text color */
+      }
+
+      nav a:hover {
+        background-color: #555; /* Change this to your desired hover background color */
+      }
+
+      /* Centering the navigation links */
+      nav ul {
+        text-align: center;
+      }
+
+      nav li {
+        display: inline;
+        margin-right: 20px; /* Adjust the spacing between links */
+      }
+
+      /* Making the navigation bar fixed at the top */
+      nav {
+        top: 0;
+        width: 100%;
+      }
+
+      /* Adding spacing between the header and the navigation bar */
+      h2 {
+        margin-bottom: 20px;
+      }
+      .button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="number"],
+      input[type="email"],
+      select,
+      input[type="date"],
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2 align="center" style="color: white">Student Information System</h2>
+    <div class="navbar">
+      <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+      <a href="registration.html">Registration</a>&nbsp;&nbsp;&nbsp;
+      <a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;
+      <a href="contact.html">Contact US</a>&nbsp;&nbsp;&nbsp;
+      <a href="https://newerp.kluniversity.in/" target="_blank">ERP</a>
+    </div>
+    <br/><br/>
+    <form method="post" action="studentHome.html">
+      Enter Email Address <input type="email" name="emailId" required />
+      <br />
+      Enter Password <input type="password" name="pwd" required /><br />
+      <input type="submit" value="Login" />
+      <input type="reset" value="Clear" />
+    </form>
+    <p style="text-align: center; color: white;">
+    New User ? <a href="registration.html" class="button">Register Here</a></p>
+  </body>
+</html>

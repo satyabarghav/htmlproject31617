@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>MSWD</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body bgcolor="#B6C4B6">
+    <h2 align="center">Student Information System</h2>
+    <!--- Navbar Start --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://kluniversity.in" target="_blank"
+          ><img src="https://raw.githubusercontent.com/satyabarghav/htmlproject31617/main/images/klBlack.png" width="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://newerp.kluniversity.in"
+                target="_blank"
+                >ERP</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--- Navbar End --->
+    <br /><br />
+    <center>
+      <form method="post" action="#">
+
+        <table>
+          <tr>
+            <td><label>Enter Student ID</label></td>
+            <td><input type="number" name="sid" required /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Student Name</label></td>
+            <td><input type="text" name="sname" required /></td>
+          </tr>
+          <tr>
+            <td><label>Select Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="MALE" required />Male
+              <input type="radio" name="gender" value="FEMALE" required />Female
+              <input type="radio" name="gender" value="OTHERS" required />Others
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter DOB</label></td>
+            <td>
+              <input type="date" name="dob" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Department</label></td>
+            <td>
+              <select name="dept" required>
+                <option value="">---Select---</option>
+                <option value="CSE">CSE</option>
+                <option value="CS&IT">CS&IT</option>
+                <option value="AI&DS">AI&DS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Program</label></td>
+            <td>
+              <select name="program" required>
+                <option value="">---Select---</option>
+                <option value="B.Tech">B.Tech.</option>
+                <option value="M.Tech">M.Tech.</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Skill(s)</label></td>
+            <td>
+              <input type="checkbox" name="skills" value="C" required />C
+              <input type="checkbox" name="skills" value="C++" required />C++
+              <input type="checkbox" name="skills" value="JAVA" required />JAVA
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Year</label></td>
+            <td><input type="number" name="syear" min="1" max="4" required /></td>
+          </tr>
+          <tr>
+            <td><label>Enter CGPA</label></td>
+            <td><input type="number" name="cgpa" step="0.01" min="0.00" max="10.00" required /></td>              
+          </tr>
+          <tr>
+            <td><label>Enter Number of Backlogs</label></td>
+            <td><input type="number" name="backlog" min="0" max="20" required /></td>
+          </tr>
+          <tr >
+            <td colspan="2">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Password</label></td>
+            <td>
+              <input type="password" name="pwd" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Contact Number</label></td>
+            <td>
+              <input type="text" name="mobile" pattern="[6789][0-9]{9}" placeholder="Must be 10 digits" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Address</label></td>
+            <td>
+              <textarea name="address" required></textarea>
+            </td>
+          </tr>
+          
+          <tr align="center">
+            <td><input type="submit" value="Register" class="button" /></td>
+            <td><input type="reset" value="Reset" class="button" /></td>
+          </tr>
+          
+        </table>
+      </form>
+    </center>
+  </body>
+</html>
